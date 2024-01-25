@@ -134,7 +134,7 @@ namespace CollectionsMasterConsoleUI
         {
             for (int i = numberList.Count - 1; i >= 0; i--)
             {
-                if (numberList[i] % 3 == 0)
+                if (numberList[i] % 2 != 0)
                 {
                     numberList.RemoveAt(i);
                 }
@@ -169,7 +169,7 @@ namespace CollectionsMasterConsoleUI
             Random rng = new Random();
             for (int i = 0; i < 50; i++)
             {
-                numberList.Add(rng.Next(50));
+                numberList.Add(rng.Next(51));
                 count++;
             }
             //Console.WriteLine(count);
@@ -181,7 +181,7 @@ namespace CollectionsMasterConsoleUI
             Random rng = new Random();
             for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = rng.Next(50);
+                numbers[i] = rng.Next(51);
             }
         }
 
